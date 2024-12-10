@@ -1,0 +1,52 @@
+.notfound-h1{
+
+    font-size: 200px;
+    font-weight: bold;
+    -webkit-text-stroke-width: 2px;
+    stroke-width: 2px;
+    -webkit-text-stroke-color: #00000038;
+    stroke: #00000038;
+    text-shadow: -2px -5px 1px #FFAB00;
+
+
+}
+
+.notfound-h2{
+
+    font-size: 42px;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+   /* Tablet CSS */
+
+   @media only screen and (min-width: 768px) and (max-width: 1024px){
+
+    .notfound-h1{
+
+        font-size: 140px;
+    }
+    .notfound-h2{
+
+        font-size: 32px;
+        
+    }
+
+   }
+
+
+      /* Mobile CSS */
+
+      @media only screen and (max-width: 767px){
+
+        .notfound-h1{
+
+            font-size: 100px;
+        }
+        .notfound-h2{
+    
+            font-size: 24px;
+            
+        }
+
+      }

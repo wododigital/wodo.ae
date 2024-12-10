@@ -1,0 +1,215 @@
+.about-hero {
+  height: 90vh;
+  display: flex;
+  align-items: end;
+  justify-content: flex-start;
+  background: url("../../media/WODO-About-Hero-section.jpg"),
+    rgba(0, 0, 0, 0.2);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: overlay;
+}
+.about-hero-p{
+    text-shadow: 2px 2px #000;
+}
+
+.gs_h2 {
+  font-family: "Poppins", Sans-serif;
+  color: #fff;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+.gs_h2::before {
+  content: "";
+  display: block;
+  position: relative;
+  width: 40px;
+  height: 3px;
+  background-color: #ffffff;
+  left: -50px;
+  top: 10px;
+}
+
+.h2_black {
+  color: #1f1f1f;
+  text-shadow: none;
+}
+
+.h2_black::before {
+  background-color: #1f1f1f;
+}
+
+.year-text::before {
+  content: "";
+  width: 40px;
+  height: 3px;
+  display: block;
+  background-color: #595959;
+  position: absolute;
+  top: 20%;
+  left: -45px;
+}
+
+.year-text {
+  position: absolute;
+  font-weight: bold;
+  top: 10;
+  left: 35px;
+  display: inline-block;
+  rotate: -90deg;
+}
+
+.storysection-h5::before {
+  content: "";
+  display: block;
+  width: 45px;
+  background-color: #1f1f1f;
+  height: 3px;
+  position: relative;
+  top: 5px;
+  left: -55px;
+}
+
+.story-section {
+  background-image: url("../../media/WODO-about-page-gradient-1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.founders-story img {
+  border-radius: 50%;
+  width: 40%;
+  padding: 10px;
+  border: 1px solid #1f1f1f;
+}
+
+.founders-story .gf_text {
+  font-size: 14px;
+}
+
+.fstory-text {
+  font-size: 14px;
+}
+
+.button-col {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  padding-top: 40px;
+  padding-left: 20px;
+}
+
+.fname::before {
+  content: "";
+  display: block;
+  width: 30px;
+  height: 3px;
+  background-color: #1f1f1f;
+  position: relative;
+  top: 5px;
+  left: -35px;
+}
+
+.founders-story {
+  background-image: url("../../media/WODO-about-page-gradient-1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.ctaSection {
+  background-color: #1f1f1f;
+}
+
+.about-cta-btn {
+  font-size: 20px;
+  font-weight: 600;
+  padding: 10px 10px 10px 0px;
+  color: #1f1f1f;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: none;
+  border-bottom: 2.5px solid #f8a925;
+}
+
+.about-cta-text {
+  font-size: 20px;
+  font-weight: 600;
+  transition: transform 0.5s;
+  color: #fff;
+}
+
+.about-cta-icon {
+  margin-left: 10px;
+  width: 25px;
+  height: 25px;
+  transform: rotate(-45deg);
+  transition: transform 0.5s;
+  fill: #fff;
+}
+
+.about-cta-btn:hover .about-cta-icon {
+  transform: rotate(0deg);
+  transform: translateX(10px);
+  transition: transform 0.5s;
+}
+
+.about-cta-btn:hover .about-cta-text {
+  transform: translateX(10px);
+  transition: transform 0.5s;
+  color: #f8a925;
+}
+
+.storysection-h5-mob {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Tablet CSS */
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .year-text {
+    left: 5px;
+  }
+
+  .about-hero {
+    height: 60vh;
+  }
+}
+
+/* Mobile CSS */
+
+@media only screen and (max-width: 767px) {
+  .storysection-h5::before {
+    width: 25px;
+    top: 5px;
+    left: -25px;
+  }
+
+  .gs_h2::before {
+    width: 20px;
+    height: 3px;
+    left: -25px;
+    top: 10px;
+  }
+
+  .about-hero {
+    height: 40vh;
+  }
+
+  .storysection-h5::before {
+    width: 25px;
+    height: 2px;
+    top: 5px;
+    left: -25px;
+  }
+
+  .year-text-mob {
+    font-size: 18px;
+  }
+}

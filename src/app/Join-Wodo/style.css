@@ -1,0 +1,14 @@
+.joinWodoSubmitBtn{
+    padding: 15px 40px 15px 40px;
+    border-style: solid;
+    border-width: 0px 0px 0px 0px;
+    border-radius: 0px 0px 0px 0px;
+    background-color: black;
+    color: #fff;
+    transition: 0.2s;
+    font-weight: 600;
+}
+
+.joinWodoSubmitBtn:hover{
+    background-color: #F8A925;
+}

@@ -1,0 +1,206 @@
+.Project_HeroSection {
+  margin-top: 60px;
+  min-height: 40vh;
+  color: #1f1f1f;
+}
+
+.background_overlay {
+  background-color: transparent;
+  background-image: linear-gradient(180deg, #00000000 13%, #1f1f1f 66%);
+  opacity: 0.3;
+  height: 40vh;
+}
+
+.hero_backgroung_image {
+  background-color: transparent;
+  background-image: url("https://wodo.digital/media/2021/10/Work-Page-Banner-WODO-Agency.png");
+  background-size: cover;
+  height: 40vh;
+}
+
+.dropDownProject {
+  width: 100%;
+  font-size: 16px;
+  font-weight: 400;
+  color: #ffffff;
+  background-color: #000000;
+  border-radius: 30px 30px 30px 30px;
+  padding: 20px 20px 20px 20px;
+}
+
+.singleprojecthero {
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-position-x: 100%;
+  background-position-y: 50%;
+  background-repeat: no-repeat;
+  background-size: 60%;
+}
+
+.singleprojecthero-h2::before {
+  content: "";
+  display: block;
+  position: relative;
+  background-color: #fff;
+  width: 40px;
+  height: 3px;
+  left: -40px;
+  top: 10px;
+}
+.singleprojecthero-h2 {
+  text-transform: capitalize;
+}
+
+.project-h2 {
+  text-transform: capitalize;
+}
+.singleprojecthero h2 {
+  color: #fff;
+  font-size: 50px;
+}
+
+.singleprojecthero p {
+  color: #fff;
+}
+
+.singleproject-tags p {
+  color: #fff;
+}
+.project-h2::before {
+  content: "";
+  display: block;
+  position: relative;
+  background-color: #1f1f1f;
+  width: 40px;
+  height: 3px;
+  left: -40px;
+  top: 10px;
+}
+
+.card-title {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.card-text {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.tag-badge {
+  display: inline-flex;
+  flex-direction: row;
+  font-size: 14px;
+  background-color: #ffffff1a;
+  color: #ffffff;
+  padding: 5px 10px 5px 10px;
+  margin: 5px 5px 5px 5px;
+  border-radius: 5px 5px 5px 5px;
+}
+
+.fullsite-col {
+  height: 600px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  border-radius: 10px;
+  border: 10px solid #1f1f1f;
+  padding: 0;
+}
+
+.fullsite-col img {
+  width: 100%;
+}
+
+.results-grid {
+  background-color: #fbfbfb;
+  padding: 20px 30px;
+  border-radius: 10px;
+}
+
+.results-value {
+  font-size: 44px;
+  color: #f8a925;
+  font-weight: bold;
+}
+
+.service-item {
+  background-color: #fbfbfb;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.service-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.service-description {
+  font-size: 0.9rem;
+  font-weight: 300;
+}
+
+.project-details {
+  background-image: url("https://wodo.digital/media/2022/03/WODO-about-page-gradient-1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.project-carousel {
+  background-image: url("https://wodo.digital/media/2022/03/WODO-about-page-gradient-1.jpg");
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: cover;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .Project_HeroSection {
+    margin-top: 60px;
+    min-height: 30vh;
+    color: #1f1f1f;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .Project_HeroSection {
+    margin-top: 40px;
+    min-height: 20vh;
+  }
+
+  .background_overlay {
+    height: 30vh;
+  }
+
+  .hero_backgroung_image {
+    height: 30vh;
+  }
+
+  .dropDownProject {
+    font-size: 12px;
+    padding: 15px;
+  }
+  .singleprojecthero h2 {
+    font-size: 32px;
+  }
+  .singleprojecthero {
+    height: 55vh;
+    background-position: top;
+    background-size: 100%;
+    align-items: end;
+  }
+
+  .fullsite-col {
+    height: 400px;
+  }
+
+  .tag-badge {
+    font-size: 12px;
+  }
+  .results-value {
+    font-size: 24px;
+  }
+  .service-title {
+    font-size: 16px;
+  }
+}

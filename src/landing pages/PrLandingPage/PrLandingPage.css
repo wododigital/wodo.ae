@@ -1,0 +1,790 @@
+.pr-hero {
+  background-color: #1f1f1f;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+}
+
+.pr-header {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: #1f1f1f;
+}
+
+.pr-logo {
+  width: 120px;
+  height: auto;
+}
+
+.pr-header-text {
+  font-size: 18px;
+  font-weight: 500;
+  color: #fff;
+}
+
+.pr-h1 {
+  font-size: 54px;
+  font-weight: 700;
+  color: #fff;
+}
+
+.pr-text {
+  font-size: 20px;
+  color: #fff;
+  font-weight: 300;
+}
+
+.pr-btn {
+  background-color: #f8a925;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+  border: none;
+  padding: 2% 4%;
+  border-radius: 10px;
+}
+
+.pr-counter {
+  border-bottom: 2px solid #f8a925;
+}
+
+.pr-h2 {
+  font-size: 48px;
+  font-weight: 600;
+  color: #1f1f1f;
+}
+
+.pr-h2-bg {
+  background-image: url("https://wodo.digital/wp-content/uploads/2024/02/Doodle-WODO-PR-6-min.png");
+  background-repeat: no-repeat;
+  background-size: 60px 60px;
+  background-position: 290px 10px;
+  padding-top: 50px;
+}
+
+.pr-h2-bg-2 {
+  background-size: 80px 80px;
+  background-position: 210px 0px;
+  padding-top: 50px;
+}
+
+.pr-h2-bg-3 {
+  background-size: 80px 80px;
+  background-position: 35% 0;
+  padding-top: 50px;
+}
+
+.counter-number {
+  text-align: center;
+  margin: 0 0;
+  font-size: 54px;
+  font-weight: 700;
+}
+
+.counter-text {
+  text-align: center;
+  /* margin:10px 0; */
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.pr-img {
+  width: 150px;
+  height: auto;
+  object-fit: fill;
+}
+
+.w-xxl-50 {
+  width: 70%;
+}
+
+.wrapper {
+  background-color: #f8a925;
+  display: flex;
+  overflow: hidden;
+}
+
+.textw {
+  font-size: 36px;
+  white-space: nowrap;
+  animation: scroll 100s infinite linear;
+}
+
+@keyframes scroll {
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.pr-light {
+  color: #fff;
+}
+.pwp {
+  background-color: #1f1f1f;
+}
+
+.pr-icon-list {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  column-gap: 15px;
+}
+
+.pr-icon-list img {
+  width: 25px;
+}
+
+.pr-h4 {
+  font-size: 28px;
+  font-weight: 400;
+}
+
+.pr-img-3 {
+  width: 50px;
+}
+
+.pr-craft-text {
+  font-size: 24px;
+}
+
+.pr-box-width {
+  width: 200px;
+  padding: 5px 18px;
+}
+
+.digital-pr-box {
+  border: 3px solid #000;
+  background-color: #f6f5f3;
+  width: 600px;
+  margin: 100px auto;
+}
+
+.digital-pr-border {
+  border-bottom: 2px solid #000;
+  padding-bottom: 10px;
+  margin: 10px;
+}
+
+.pr-box-btn {
+  color: #f8a925;
+  background: #000;
+  border: none;
+  padding: 8px;
+  border-radius: 10px;
+  width: 90%;
+}
+
+.pr-box-heading {
+  font-size: 48px;
+}
+
+.pr-box-sm-text {
+  font-size: 18px;
+}
+
+.pr-box-content-list {
+  width: 100%;
+  margin: 10px auto;
+}
+
+.pr-box-content-list-text {
+  font-size: 24px;
+  margin-bottom: 0 !important;
+}
+
+.case-studies-img {
+  width: 420px;
+  margin: 20px 5px;
+}
+
+.pr-discover-img {
+  width: 60%;
+  margin: 0 auto;
+}
+
+.pr-input {
+  width: 450px;
+  padding: 8px 20px;
+  outline: none;
+  border-radius: 10px;
+  border: none;
+}
+
+.pr-animation-img {
+  width: 50%;
+  background-color: #f6f5f3;
+}
+
+.pr-animation-img-bg {
+  /* background-color: #f6f5f3; */
+  padding: 10px 0;
+  width: 50%;
+  margin: 0 auto;
+  border-radius: 10px;
+}
+
+.pr-flip-box {
+  perspective: 1000px;
+  position: relative;
+  width: 150px;
+  height: 50px;
+}
+
+.pr-flip-box-inner {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+  animation: prautoflip 5s infinite;
+}
+
+.pr-flip-box-front,
+.pr-flip-box-back {
+  background-color: #f6f5f3;
+  backface-visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 12px 0;
+  border-radius: 10px;
+}
+
+.pr-flip-box-back {
+  transform: rotateX(180deg);
+}
+
+.pr-flip-box .pr-flip-box-inner:hover {
+  transform: rotateX(-180deg);
+}
+
+@keyframes prautoflip {
+  0%,
+  100% {
+    transform: rotateX(0deg);
+  }
+  50% {
+    transform: rotateX(180deg);
+  }
+}
+
+.news-name {
+  background-color: #1f1f1f;
+  font-weight: 700;
+}
+
+.pr-animate-line-1,
+.pr-animate-line-2,
+.pr-animate-line-3,
+.pr-animate-line-4,
+.pr-animate-line-5,
+.pr-animate-line-6 {
+  border: 1px solid #fffefe;
+  height: 150px;
+  width: 0px;
+  position: absolute;
+  z-index: 1;
+  left: 49.3%;
+  top: 45%;
+  /* transition: all 0.4s; */
+  animation: line 5s infinite;
+}
+.news-name {
+  width: 25%;
+}
+.pr-animate-line-2,
+.pr-animate-line-4,
+.pr-animate-line-6 {
+  transform-origin: bottom;
+  top: 10%;
+  animation: line2 5s infinite;
+}
+
+.pr-animate-line-3,
+.pr-animate-line-5 {
+  transform-origin: bottom;
+  top: 10%;
+  animation: line3 5s infinite;
+}
+
+.pr-animate-line-3 {
+  top: -16%;
+  left: 66%;
+  rotate: 235deg;
+}
+
+.pr-animate-line-4 {
+  rotate: 125deg;
+  top: 2%;
+  left: 46%;
+}
+
+.pr-animate-line-5 {
+  top: 30%;
+  left: 31%;
+  rotate: 57deg;
+}
+
+.pr-animate-line-6 {
+  rotate: 305deg;
+  top: 7%;
+  left: 49.7%;
+}
+
+@keyframes line {
+  0% {
+    height: 150px;
+  }
+
+  25% {
+    height: 40px;
+  }
+
+  50% {
+    height: 40px;
+  }
+
+  100% {
+    height: 150px;
+  }
+}
+
+@keyframes line2 {
+  0% {
+    transform: scaleY(1); /* Full height */
+    /* border-color: red; */
+  }
+
+  25% {
+    transform: scaleY(0.3); /* Zero height */
+  }
+
+  50% {
+    transform: scaleY(0.3); /* Zero height */
+  }
+
+  100% {
+    transform: scaleY(1); /* Full height */
+  }
+}
+
+@keyframes line3 {
+  0% {
+    transform: scaleY(1); /* Full height */
+    /* border-color: red; */
+  }
+
+  25% {
+    transform: scaleY(0); /* Zero height */
+  }
+
+  50% {
+    transform: scaleY(0); /* Zero height */
+  }
+
+  100% {
+    transform: scaleY(1); /* Full height */
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .pr-hero {
+    height: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .pr-flip-box {
+    width: 100px;
+    height: 50px;
+  }
+  .news-name {
+    width: 40%;
+  }
+  .pr-animate-line-1,
+  .pr-animate-line-2,
+  .pr-animate-line-3,
+  .pr-animate-line-4,
+  .pr-animate-line-5,
+  .pr-animate-line-6 {
+    height: 120px;
+  }
+  .pr-animate-line-1 {
+    left: 50%;
+  }
+  .pr-animate-line-2 {
+    left: 50%;
+  }
+  .pr-animate-line-3 {
+    top: 10%;
+    left: 55%;
+  }
+  .pr-animate-line-4 {
+    top: 10%;
+    left: 45%;
+  }
+  .pr-animate-line-5 {
+    top: 15%;
+    left: 45%;
+  }
+  .pr-animate-line-6 {
+    top: 20%;
+    left: 50%;
+  }
+}
+
+.pr-discover-img {
+  width: 60%;
+  margin: 0 auto;
+}
+
+.pr-input {
+  width: 450px;
+  padding: 8px 20px;
+  outline: none;
+  border-radius: 10px;
+  border: none;
+}
+
+.circle {
+  position: relative;
+  width: 400px;
+  height: 400px;
+  background: #feeed3;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  margin: 0 auto;
+}
+
+.rotate-text {
+  color: #1a1818;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  animation: anim 15s linear infinite;
+  font-size: 25px;
+  font-weight: 700;
+}
+
+@keyframes anim {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.rotate-text span {
+  position: absolute;
+  top: 5%;
+  left: 50%;
+  transform-origin: 0 180px;
+}
+
+.play_btn {
+  background-color: #f8a925;
+  padding: 60px 70px;
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+}
+
+.pr-bg-1 {
+  background-image: url("https://server-demo.wodo.digital/media/2024/02/Doodle-WODO-PR-4-min.png");
+  width: 100px;
+  height: 100px;
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  left: 200px;
+  -webkit-transform: rotate(74deg);
+  /* -moz-transform: rotate(120deg); */
+}
+
+.pr-bg-2 {
+  background-image: url("https://server-demo.wodo.digital/media/2024/02/Doodle-WODO-PR-7-min-e1708408821546.png");
+  width: 300px;
+  height: 121px;
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  left: 40%;
+  bottom: -80px;
+}
+
+.pr-bg-3 {
+  background-image: url("https://server-demo.wodo.digital/media//2024/02/Doodle-WODO-PR-8-min.png");
+  width: 160px;
+  height: 161px;
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  left: 70%;
+  bottom: -110px;
+  -webkit-transform: scaleX(-1);
+}
+
+.pr-bg-4 {
+  background-image: url("https://server-demo.wodo.digital/media//2024/02/Doodle-WODO-PR-5-min-e1708411193733.png");
+  width: 140px;
+  height: 261px;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 10%;
+  bottom: -160px;
+  -webkit-transform: rotate(90deg);
+  z-index: 1;
+}
+
+.pr-bg-5 {
+  background-image: url("https://server-demo.wodo.digital/media/2024/02/Doodle-WODO-PR-10-min-e1708496961563.png");
+  width: 300px;
+  height: 300px;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 0%;
+  bottom: -160px;
+  -webkit-transform: rotate(54deg);
+}
+
+.pr-bg-6 {
+  bottom: -110px;
+}
+
+@media (max-width: 767px) {
+  .flex-sm-wrap {
+    flex-wrap: wrap;
+  }
+
+  .w-xxl-50 {
+    width: 100%;
+  }
+  .pr-h1 {
+    font-size: 36px;
+    width: 100% !important;
+  }
+
+  .pr-text {
+    width: 80% !important;
+    font-size: 18px;
+  }
+
+  .w-sm-50 {
+    width: 50% !important;
+  }
+
+  .counter-text {
+    font-size: 14px;
+    text-align: center;
+    padding: 0;
+    margin: 5px 0;
+  }
+
+  .counter-number {
+    margin: 2px 0;
+  }
+  .pr-h2 {
+    font-size: 35px;
+    /* margin:0 30px; */
+  }
+
+  .pr-img {
+    width: 110px;
+    margin: 10px 0;
+  }
+
+  .pr-img-2 {
+    width: 70px;
+    margin: 15px 0;
+  }
+
+  .counter-number {
+    font-size: 24px;
+  }
+
+  .justify-content-sm {
+    margin: 20px 0;
+  }
+
+  .w-sm-100 {
+    width: 100% !important;
+  }
+
+  .textw {
+    font-size: 26px;
+  }
+
+  .pr-h4 {
+    font-size: 16px;
+  }
+
+  /* .pr-icon-list{
+        padding-left:60px;
+      } */
+
+  .pr-icon-list img {
+    width: 20px;
+  }
+
+  .text-sm-center {
+    text-align: center;
+  }
+
+  .digital-pr-box {
+    width: 98%;
+    margin: 40px 0 0 0;
+  }
+
+  .pr-box-heading {
+    font-size: 30px;
+  }
+
+  .mx-sm-auto {
+    width: 70%;
+    margin: 10px auto;
+  }
+
+  .pr-box-sm-text {
+    font-size: 14px;
+  }
+
+  .pr-box-content-list {
+    width: 90%;
+    margin: 10px auto;
+  }
+
+  .pr-box-content-list-text {
+    font-size: 16px;
+    margin-bottom: 0 !important;
+  }
+
+  .pr-img-3 {
+    width: 40px;
+  }
+
+  .pr-sm-mx-auto,
+  .counter-number {
+    text-align: center;
+  }
+
+  .pr-box-width {
+    width: 23%;
+    margin: 0 5px;
+    padding: 0 18px;
+  }
+
+  .pr-craft-text {
+    font-size: 12px;
+    text-align: center;
+    margin: 10px 0;
+  }
+
+  .case-studies-img {
+    width: 300px;
+    margin: 20px 5px;
+  }
+
+  .pr-btn {
+    width: 100%;
+  }
+
+  .pr-input {
+    width: 80%;
+  }
+
+  .circle {
+    position: relative;
+    width: 300px;
+    height: 300px;
+  }
+  .rotate-text span {
+    top: 4%;
+    left: 50%;
+    transform-origin: 0 140px;
+  }
+
+  .play_btn {
+    padding: 45px 52px;
+    width: 170px;
+    height: 170px;
+  }
+
+  .play_btn div svg {
+    /* fill:red; */
+    width: 80px;
+    height: 80px;
+  }
+
+  .pr-bg-2 {
+    width: 149px;
+    height: 50px;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    left: 30%;
+    bottom: -35px;
+  }
+
+  .pr-bg-3 {
+    width: 100px;
+    height: 100px;
+    left: 70%;
+    bottom: -60px;
+  }
+
+  .pr-bg-4 {
+    width: 100px;
+    height: 261px;
+    z-index: 1;
+    bottom: -170px;
+  }
+
+  .pr-bg-5 {
+    width: 200px;
+    height: 200px;
+    left: 0%;
+    bottom: -140px;
+  }
+
+  .pr-bg-6 {
+    bottom: -70px;
+  }
+
+  .pr-h2-bg {
+    background-size: 50px 50px;
+    background-position: 0px 10px;
+    padding: 40px 20px 0 20px;
+  }
+
+  .pr-h2-bg-2 {
+    background-size: 50px 50px;
+    background-position: 60px 0px;
+    padding-top: 30px;
+  }
+
+  .pr-h2-bg-3 {
+    background-position: 7% 0;
+  }
+}
+
+.fixed-icon i {
+  padding: 10px;
+  font-size: 28px;
+  position: fixed;
+  background-color: #25d366;
+  bottom: 30px;
+  right: 20px;
+  color: #fff;
+  border-radius: 50%;
+}

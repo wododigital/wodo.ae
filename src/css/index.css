@@ -1,0 +1,172 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+body {
+  margin: 0;
+  font-family: "Poppins", Sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow: auto;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #1f1f1f;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #f8a925;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #af7818;
+}
+
+code {
+  font-family: "Poppins", Sans-serif;
+}
+
+/* Global Styles for Fonts - Desktop */
+
+.gf_h1 {
+  color: #ffffff;
+  font-family: "Poppins", Sans-serif;
+  font-size: 60px;
+  font-weight: bold;
+  line-height: 1.4em;
+  letter-spacing: 1px;
+}
+
+.gf_h2 {
+  color: #1f1f1f;
+  font-family: "Poppins", Sans-serif;
+  font-size: 44px;
+  font-weight: bold;
+  line-height: 1.2;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.gf_h3 {
+  color: #1f1f1f;
+  font-family: "Poppins", Sans-serif;
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 1.25em;
+}
+
+.gf_h4 {
+  color: #1f1f1f;
+  font-family: "Poppins", Sans-serif;
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 1.3em;
+}
+
+.gf_h5 {
+  color: #1f1f1f;
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.gf_h6 {
+    color: #ffffff;
+    font-family: "Poppins", sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+  }
+
+.gf_text {
+  color: #1f1f1f;
+  font-family: "Poppins", Sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.gf_cta {
+  color: #1f1f1f;
+  font-family: "Poppins", Sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.4em;
+  letter-spacing: 1px;
+}
+
+/* Global Styles for Fonts - Tablet */
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .gf_h1 {
+    font-size: 32px;
+    line-height: 1.4em;
+  }
+
+  .gf_h2 {
+    font-size: 36px;
+    line-height: 1.4em;
+  }
+
+  .gf_h3 {
+    font-size: 24px;
+    line-height: 1.4em;
+  }
+
+  .gf_h4 {
+    font-size: 24px;
+    line-height: 1.3em;
+  }
+
+  .gf_text {
+    font-size: 16px;
+    line-height: 1.3em;
+  }
+
+  .gf_cta {
+    font-size: 18px;
+    line-height: 1.4em;
+  }
+}
+
+/* Global Styles for Fonts - Mobile */
+
+@media only screen and (max-width: 767px) {
+  .gf_h1 {
+    font-size: 36px;
+    line-height: 1.2em;
+  }
+
+  .gf_h2 {
+    font-size: 32px;
+    line-height: 1.2em;
+  }
+
+  .gf_h3 {
+    font-size: 22px;
+    line-height: 1.2em;
+  }
+
+  .gf_h4 {
+    font-size: 22px;
+    line-height: 1.3em;
+  }
+
+  .gf_text {
+    font-size: 14px;
+    line-height: 1.3em;
+  }
+
+  .gf_cta {
+    font-size: 16px;
+    line-height: 1.4em;
+  }
+
+  .hide-elementor-btn {
+    display: none;
+  }
+}

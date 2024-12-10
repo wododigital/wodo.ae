@@ -1,0 +1,38 @@
+.background_image{
+    background-image: url('https://wodo.digital/media/2023/12/India-Map.webp');
+    background-position: top center;
+    background-size: cover;
+    height: 90vh;
+}
+
+.gf_cta_paragraph{
+    color: #ffffff;
+    font-weight: 400 !important;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+ /* Tablet CSS */
+
+ @media only screen and (min-width: 768px) and (max-width: 1024px){
+
+    .background_image{
+        height: 60vh;
+    }
+
+    }
+
+/* Mobile CSS */
+
+@media only screen and (max-width: 767px) {
+
+    .background_image{
+        height: 50vh;
+    }
+
+    .gf_cta_paragraph{
+        font-size: 18px;
+    }
+
+}

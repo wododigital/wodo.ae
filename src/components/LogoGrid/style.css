@@ -1,0 +1,62 @@
+
+.logo-grid-container {
+    display: grid;
+    transition: 1s;
+
+}
+.logo-grid-item {
+    color: rgb(107, 106, 106);
+    padding: 20px;
+    font-size: 1.5rem;
+    text-align: center;
+    transition: 1s;
+    border: 0.1px solid #F5F5F5;
+    height: 120px;
+
+}
+
+/* Default layout: 6 columns */
+.logo-grid-container {
+    grid-template-columns: repeat(6, 1fr);
+    transition: 1s;
+
+}
+
+.logo-verticle_center{
+    display: flex;
+    flex-direction: column;       
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+}
+
+
+.logo-image{
+    width: 60%;
+    transition: 0.5s;
+}
+
+.logo-image:hover{
+    width: 60%;
+}
+
+/* Responsive layout: 3 columns on smaller screens */
+@media (max-width: 1254px) {
+    .logo-grid-container {
+        grid-template-columns: repeat(3, 1fr);
+        transition: 1s;
+    }
+}
+
+@media (max-width: 600px) {
+    .logo-grid-container {
+        grid-template-columns: repeat(3, 1fr);
+        transition: 1s;
+    }
+    
+    .logo-grid-item {
+        height: 140px;
+
+    }
+}

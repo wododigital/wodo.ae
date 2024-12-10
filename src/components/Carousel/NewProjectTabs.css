@@ -1,0 +1,32 @@
+.sticky-1 {
+  position: sticky;
+  top: 60px;
+  z-index: 1;
+}
+
+.sticky-2 {
+  position: sticky;
+  top: 120px;
+  z-index: 2;
+}
+
+.sticky-3 {
+  position: sticky;
+  top: 180px;
+  z-index: 3;
+}
+
+.sticky-4 {
+  position: sticky;
+  top: 240px;
+  z-index: 4;
+}
+
+.sticky-5 {
+    opacity: 0;
+    position: sticky;
+    top: 0px;
+    z-index: 5;
+  }
+
+

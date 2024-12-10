@@ -1,0 +1,71 @@
+.contact {
+  padding-top: 5rem;
+  background-image: url("https://wodo.digital/wp-content/uploads/2022/03/WODO-about-page-gradient-1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.yellow-text {
+  color: #f8a925;
+  font-weight: bold;
+  text-decoration: underline;
+  text-decoration-color: #1f1f1f;
+}
+
+.c_h1 {
+  color: #1f1f1f;
+  font-size: 66px;
+  font-weight: 600;
+}
+
+.contact-form-row {
+  border-bottom: 3px solid #1f1f1f;
+  cursor: pointer;
+}
+.contact-h4,
+.contact-form-row-icon {
+  transition: 0.5s;
+}
+.contact-form-row:hover .contact-h4 {
+  color: #f8a925;
+  transform: translateX(20px);
+  transition: color 0.1s ease-in-out, transform 0.5s ease-in-out;
+}
+.contact-form-row:hover .contact-form-row-icon {
+  fill: #f8a925;
+  rotate: 45deg;
+  transition: rotate 0.5s ease-in-out;
+}
+
+.contact-details {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 100px;
+}
+
+.contact-form-rowbox {
+  margin-top: -6rem;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+/* Tablet View */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .c_h1 {
+    font-size: 42px;
+  }
+}
+
+/* Mobile View */
+
+@media only screen and (max-width: 767px) {
+  .c_h1 {
+    font-size: 32px;
+  }
+
+  .contact-form-rowbox {
+    margin-top: 0rem;
+  }
+}

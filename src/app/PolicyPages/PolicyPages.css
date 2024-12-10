@@ -1,0 +1,20 @@
+.policy-hero{
+
+    /* height: 30vh; */
+    background-color: #1f1f1f;
+    margin-top: 60px;
+
+}
+
+.policy-heading{
+
+    color: #fff;
+}
+
+a{
+
+    text-decoration: underline;
+    text-decoration-color: #1f1f1f;
+    color: #1f1f1f;
+    font-weight: 500;
+}

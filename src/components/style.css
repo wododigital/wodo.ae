@@ -1,0 +1,151 @@
+.navMenu {
+  /* height: 100vh;
+    width: 100vh; */
+  position: fixed;
+  background-color: #1f1f1f;
+  z-index: 105;
+  /* top: 0px; */
+  top: 1300px;
+  height: 100vh;
+  left: 0;
+  right: 0;
+  display: block;
+  transition: 0.7s;
+}
+.navMenuTop {
+  top: 0px;
+}
+
+/* body:not(.navMenu){
+    padding-right: 0px !important;
+    overflow-y: auto !important;
+} */
+
+.dropdown-menu {
+  background-color: #000000;
+  border-width: 0px;
+  border-radius: 0px;
+}
+
+.dropdown-item {
+  color: #fff;
+  padding-top: 10px;
+}
+
+.dropdown-item:hover {
+  color: #f8a925;
+}
+
+.verticle_center_NavMenu {
+  display: flex;
+  flex-direction: row;
+  -webkit-box-pack: left;
+  /* justify-content: center; */
+  -webkit-box-align: left;
+  align-items: left;
+  white-space: pre;
+  font-size: 18px;
+  margin-top: 20px;
+}
+
+.menuItems {
+  /* display: grid;
+    grid-auto-flow: row;
+    grid-row-gap: 5px; */
+}
+
+.NavMenuText {
+  font-family: "Poppins", Sans-serif;
+  font-size: 40px;
+  font-weight: 300;
+  letter-spacing: 2px;
+  /* transition: 0.1s; */
+}
+
+.NavMenuText:hover {
+  transition: 0.1s;
+  color: #f8a925;
+  transform: translateY(-3px) !important;
+}
+
+div[role="button"] {
+  margin: 0 0 !important;
+}
+
+.lotti-icon {
+  margin: 0 0 !important;
+}
+
+/* .dropdown:hover .dropdown-menu {
+    display: block;
+} */
+.gridContainerNavMenu {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 0px; /* Optional: space between grid items */
+  width: 100%;
+  height: 70vh; /* Full viewport height for demonstration */
+  transition: 0.5s;
+}
+
+.gridItemNavMenu {
+  display: flex;
+  align-items: end;
+  /* justify-content: center; */
+  background-color: #1f1f1f;
+
+  font-size: 24px;
+  border: 1px solid #fff;
+}
+
+.gridItemNavMenu:hover {
+  background-color: #111111;
+}
+
+.navMenuIcon {
+  width: 1.8em;
+  height: 1.8em;
+  transition: 0.2s;
+  fill: #fff;
+}
+
+.navMenuIcon:hover {
+  fill: #f8a925;
+}
+
+.close-icon img {
+  width: 40px;
+  height: auto;
+  transition-duration: 300;
+}
+
+.close-icon img:hover {
+  transform: scale(1.2);
+}
+
+
+@media (max-width: 600px) {
+  .NavMenuText {
+    font-size: 20px;
+  }
+
+  .boxTextNavMenu {
+    font-size: 15px;
+  }
+
+  .gridContainerNavMenu {
+    height: 40vh;
+  }
+
+  .close-icon img {
+    width: 25px;
+  }
+
+  .social-media-icon-box{
+
+    position: absolute;
+    bottom: 46% !important;
+
+  }
+}

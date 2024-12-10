@@ -1,0 +1,27 @@
+/* Width and animation styling */
+.w-200 {
+    width: 200%;
+  }
+  
+  .animate-loop {
+    animation: scroll-loop 20s linear infinite;
+  }
+  
+  @keyframes scroll-loop {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+  
+  /* Grayscale effect */
+  .grayscale {
+    filter: grayscale(100%);
+  }
+  
+  .hover-grayscale-0:hover {
+    filter: grayscale(0%);
+  }
+  

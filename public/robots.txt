@@ -1,0 +1,6 @@
+User-agent: *
+Disallow: /static/
+Disallow: /private/
+
+
+Sitemap: https://www.wodo.digital/sitemap.xml

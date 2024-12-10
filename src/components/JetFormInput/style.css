@@ -1,0 +1,25 @@
+.inputTextBox{
+    font-family: "Poppins", Sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    text-transform: none;
+    line-height: 1.5em;
+    color: #1F1F1F;
+    background-color: #00000000;
+    padding: 15px 15px 15px 15px;
+    border-style: solid;
+    border-width: 0px 0px 1px 05px;
+    border-color: #F8A925;
+    border-radius: 0px 0px 0px 0px;
+
+    max-width: 100%;
+    width: 100%;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 1 100%;
+    flex: 0 1 100%;
+}
+
+
+.inputTextBox:focus-visible {
+    outline: 0px !important;
+}

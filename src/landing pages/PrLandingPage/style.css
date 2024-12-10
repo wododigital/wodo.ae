@@ -1,0 +1,52 @@
+.pr-container{
+    height:100vh;
+}
+.pr-shadow{
+  padding:80px;  
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 0 10px #d4d3d3;
+  width:700px;
+}
+
+.thank_you_pr{
+    background-image: url(../../media/Doodle-WODO-PR-6-min.png);
+    background-position: left 0px;
+    background-repeat: no-repeat;
+    background-size: 70px;
+    font-family: "Poppins", Sans-serif;
+    font-size: 68px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 50px 0 0 0;
+}
+
+.pr-button{
+   background-color: #F8a925;
+   color:#fff;
+   text-decoration: none;
+   padding:10px 30px;
+   margin-top:40px;
+   border-radius: 10px;
+   font-size:20px;
+}
+
+
+@media (max-width:676px) {
+    .pr-shadow{
+        padding:60px 20px;  
+        width:90%;
+    }
+
+    .thank_you_pr{
+        background-position: left 10px;
+        background-size: 50px;
+        font-size: 40px;
+        padding: 50px 0 0 0;
+    }
+
+    .pr-p{
+        font-size:14px;
+    }
+}
