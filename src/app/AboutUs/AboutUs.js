@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import "./About_css.css";
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
@@ -7,9 +7,10 @@ import TeamCarousel from "./TeamSection/TeamCarousel";
 import ElementorButton from "../../components/elementorButton/elementorButton";
 import RightIcon from "../../media/right-arrow.svg";
 import { Helmet, HelmetProvider } from "react-helmet-async";
-import { Link, useLocation } from "react-router-dom";
+import { Link } from "react-router-dom";
 import BaseURL from "../../components/other/BaseURL";
-
+import API_URL from "../../config";
+import axios from "axios";
 //Hero Section
 
 function HeroSectionSlider() {
@@ -36,7 +37,7 @@ function HeroSectionSlider() {
 
 // Team Section
 
-function TeamSection() {
+function TeamSection({teamData}) {
   return (
     <>
       <div className="container py-md-5 py-3">
@@ -53,7 +54,7 @@ function TeamSection() {
           P.S. We have a resident office dog who dispenses cuddles and
           productivity boosts in equal measure. Just saying
         </p>
-        <TeamCarousel />
+        <TeamCarousel teamData={teamData}/>
       </div>
     </>
   );
@@ -360,11 +361,18 @@ function CtaSection() {
 // CTA Section
 
 function AboutUs() {
-  //     const location = useLocation();
-  //   const canonicalUrl = `https://wodo.digital${location.pathname}`;
+  const [teamData, setTeamData] = useState([]);
+  const fetchTeamData = async () => {
+    const res = await axios.get(`${API_URL}/our-team`);
+    if (res.data.status === "success") {
+      setTeamData(res.data.data);
+    }
+  }
   useEffect(() => {
     window.scrollTo(0, 0);
+    fetchTeamData();
   }, []);
+
 
   return (
     <>
@@ -407,7 +415,7 @@ function AboutUs() {
       <HeroSectionSlider />
       <StorySection />
       <Awards />
-      <TeamSection />
+      <TeamSection teamData={teamData}/>
       <FoundersStory />
       <CtaSection />
       <Footer />

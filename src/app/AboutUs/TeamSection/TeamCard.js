@@ -1,8 +1,6 @@
 import React from 'react';
 import './TeamCard.css';
-import{Link} from "react-router-dom"
 import linkedinicon from './linkedin.svg'
-import instaicon from './instagram.svg'
 
 const TeamCard = ({ name, designation, linkedinUrl, image, instagramUrl, }) => {
 
@@ -14,12 +12,12 @@ const TeamCard = ({ name, designation, linkedinUrl, image, instagramUrl, }) => {
         <h3 className="card-title team-name">{name}</h3>
         <p className="card-text team-designation gf_text">{designation}</p>
         <div className="icon-div d-flex">
-        <Link to={linkedinUrl} className="social-icon me-3">
+        <a href={linkedinUrl} target="_blank" rel="noopener noreferrer" className="social-icon me-3">
             <img src={linkedinicon} alt="LinkedIn icon" width="25" />
-          </Link>
-          <Link to={instagramUrl} className="social-icon">
+          </a>
+          {/* <Link to={instagramUrl} className="social-icon">
             <img src={instaicon} alt="Instagram Icon" />
-          </Link>
+          </Link> */}
         </div>
         </div>
       </div>

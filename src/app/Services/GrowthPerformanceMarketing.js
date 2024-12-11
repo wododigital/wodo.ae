@@ -1,10 +1,8 @@
 import React, { useEffect } from "react";
-import { useLocation } from "react-router-dom";
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 import "./services.css";
 import ServiceGrid from "../../components/ServiceGrid/ServiceGrid";
-import ImageSlider from "../../components/ImageSlider/ImageSlider";
 import LogoGrid from "../../components/LogoGrid/LogoGrid";
 import CarouselSlider from "../../components/Carousel/CarouselSlider";
 import { Helmet } from "react-helmet-async";
@@ -17,24 +15,24 @@ function GrowthPerformanceMarketing() {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
-  const marketingImages = [
-    {
-      id: 1,
-      img: "" + BaseURL + "/media/2022/04/WODO-Branding-6.jpg",
-    },
-    {
-      id: 2,
-      img: "" + BaseURL + "/media/2022/04/WODO-Branding-6.jpg",
-    },
-    {
-      id: 3,
-      img: "" + BaseURL + "/media/2022/04/WODO-Branding-6.jpg",
-    },
-    {
-      id: 4,
-      img: "" + BaseURL + "/media/2022/04/WODO-Branding-6.jpg",
-    },
-  ];
+  // const marketingImages = [
+  //   {
+  //     id: 1,
+  //     img: "" + BaseURL + "/media/2022/04/WODO-Branding-6.jpg",
+  //   },
+  //   {
+  //     id: 2,
+  //     img: "" + BaseURL + "/media/2022/04/WODO-Branding-6.jpg",
+  //   },
+  //   {
+  //     id: 3,
+  //     img: "" + BaseURL + "/media/2022/04/WODO-Branding-6.jpg",
+  //   },
+  //   {
+  //     id: 4,
+  //     img: "" + BaseURL + "/media/2022/04/WODO-Branding-6.jpg",
+  //   },
+  // ];
   return (
     <>
       <Helmet>

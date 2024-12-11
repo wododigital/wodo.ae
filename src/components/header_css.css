@@ -43,7 +43,7 @@
 }
 
 .header_container.scrolled {
-  background-color: rgba(31, 31, 31, 0.7);
+  background-color: #1f1f1f;
   backdrop-filter: blur(8px);
 }
 

@@ -1,6 +1,6 @@
 import React from "react";
 import AwardsBadge from "../../../media/Elementor-Website-Awards-2021.png";
-import { motion, useScroll, useTransform } from "framer-motion";
+import { useScroll, useTransform } from "framer-motion";
 import { Title, AnimationBody } from "./style";
 import BaseURL from "../../../components/other/BaseURL";
 

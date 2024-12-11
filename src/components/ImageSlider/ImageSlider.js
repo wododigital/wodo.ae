@@ -1,13 +1,10 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import ImageCard from './ImageCard';
 
-function ImageSlider({ images }) {
-
-    
-    
+function ImageSlider({ images }) { 
 
   var settings = {
     dots: true,

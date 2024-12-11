@@ -28,7 +28,7 @@ async function fetchProjectSlugs() {
 // Write the list of routes to a file
 async function generateRoutes() {
   try {
-    const projectSlugs = await fetchProjectSlugs();
+    //const projectSlugs = await fetchProjectSlugs();
     const routes = [
       '/',
       '/insights/',
@@ -43,7 +43,6 @@ async function generateRoutes() {
       '/growth-and-performance-marketing/',
       '/pr-landing-page/',
       '/website-development/',
-      ...projectSlugs
     ];
 
     fs.writeFileSync(

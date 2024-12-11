@@ -1,11 +1,8 @@
-import { useLocation } from "react-router-dom";
 import React, { useEffect } from "react";
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 import "./services.css";
 import ServiceGrid from "../../components/ServiceGrid/ServiceGrid";
-// import ImageSlider from "../../components/ImageSlider/ImageSlider";
-// import { Link } from "react-router-dom";
 import LogoGrid from "../../components/LogoGrid/LogoGrid";
 import CarouselSlider from "../../components/Carousel/CarouselSlider";
 import { Helmet } from "react-helmet-async";

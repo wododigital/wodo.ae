@@ -18,7 +18,7 @@ import API_URL from '../../config'
 
 function Form() {
     const [selectedOption, setSelectedOption] = useState(null);
-    const [modal, setModal] = useState(false);
+
     const [selectedServices, setSelectedServices] = useState([]);
     const [formData,setFormData]=useState({
        name:'',
@@ -93,9 +93,7 @@ function Form() {
         }))
     }
 
-    const closeModal=()=>{
-        setModal(false);
-    }
+    
   return (
     <div className='col-md'>
         <div className='ps-md-5 pt-md-5'>

@@ -71,9 +71,6 @@ function Header() {
     }, 150);
   };
  
-  const goToInsights = () => {
-    window.location.href = '/insights';
-  };
  
   return (
     <div className="header_container">
@@ -184,7 +181,7 @@ function Header() {
                 </ul>
               </li>
               <li className="nav-item">
-              <button onClick={goToInsights}>Insights</button>
+              <a href="https://wodo.ae/insights" className="nav-link">Insights</a>
               </li>
               <li className="nav-item">
                 <NavLink
