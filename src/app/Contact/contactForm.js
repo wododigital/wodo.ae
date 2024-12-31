@@ -12,14 +12,15 @@ import APPDevelopment from './icons/appdev-icon.png'
 import PerformanceMarketing from './icons/performance-icon.png'
 import CreativeMarketing from './icons/creative-icon.png'
 import GEO from './icons/geo-icon.png'
+import API_URL from '../../config'
 import axios from 'axios'
 import { useNavigate } from 'react-router-dom'
-import API_URL from '../../config'
 
 function Form() {
     const [selectedOption, setSelectedOption] = useState(null);
-
     const [selectedServices, setSelectedServices] = useState([]);
+    const [isLoading, setIsLoading] = useState(false);
+    const [error, setError] = useState(null);
     const [formData,setFormData]=useState({
        name:'',
        email:'',
@@ -29,7 +30,7 @@ function Form() {
        budget:'',
        deadline:'',
        hear_us_from:'',
-       country:'UAE'
+       country:'UAE',
     });
 
     const handlerRadio=(msg)=>{
@@ -48,6 +49,35 @@ function Form() {
         );
     };
 
+    const validateForm = () => {
+        const errors = [];
+        if (!formData.name) {
+            errors.name="Name is required";
+        }
+        if (!formData.email) {
+            errors.email="Email is required";
+        }
+        if (!formData.contact_number) {
+            errors.contact_number="Contact number is required";
+        }
+        if (!formData.services) {
+            errors.services="Services are required";
+        }
+        if (selectedServices.length === 0) {
+            errors.requirement="Requirement is required";
+        }
+        if (!formData.budget) {
+            errors.budget="Budget is required";
+        }
+        if (!formData.deadline) {
+            errors.deadline="Deadline is required";
+        }
+        if (!formData.hear_us_from) {
+            errors.hear_us_from="Hear us from is required";
+        }
+        return errors;
+    };
+
     useEffect(() => {
         setFormData(prevState => ({
           ...prevState,
@@ -60,30 +90,42 @@ function Form() {
     const formHandler=(e)=>{
         e.preventDefault();
         // console.log(formData);
-        axios.post(`${API_URL}/contact-us`,formData,{
-            withCredentials:true,
-        })
-        .then((res)=>{
-            if(res.data.status==='success'){
-                navigate("/thank-you");
-                setFormData({
-                    name:'',
-                    email:'',
-                    contact_number:'',
-                    services:null,
-                    requirement:[],
-                    budget:'',
-                    deadline:'',
-                    hear_us_from:''
-                 });
-                setSelectedOption(null);
-                setSelectedServices([]);
-              
-            }
-        })
-        .catch((err)=>{
-            console.error(err);
-        })
+        const isValid = validateForm();
+         
+        if(Object.keys(isValid).length > 0){
+            setError(isValid);
+            return;
+        }else{
+            setIsLoading(true);
+            setError(null);
+            axios.post(`${API_URL}/contact-us`,formData,{
+                withCredentials:true,
+            })
+            .then((res)=>{
+                //console.log(res.data);
+                if(res.data.status==="success"){
+                    navigate("/thank-you");
+                    setFormData({
+                        name:'',
+                        email:'',
+                        contact_number:'',
+                        services:null,
+                        requirement:[],
+                        budget:'',
+                        deadline:'',
+                        hear_us_from:''
+                     });
+                    setSelectedOption(null);
+                    setSelectedServices([]);
+                    setIsLoading(false);
+                }
+            })
+            .catch((err)=>{
+                console.error(err);
+                setIsLoading(false);
+            })
+        }
+       
     }
     const handlerInput=(e)=>{
         const {id, value} =e.target;
@@ -93,7 +135,7 @@ function Form() {
         }))
     }
 
-    
+   
   return (
     <div className='col-md'>
         <div className='ps-md-5 pt-md-5'>
@@ -101,10 +143,12 @@ function Form() {
                 <div className='mb-4'>
                     <label>Your Name *</label>
                     <input type='text' placeholder='Your Name' id="name" value={formData.name} onChange={handlerInput} className='form-control' required/>
+                    <p className='text-danger footer-text'>{error?.name}</p>
                 </div>
                 <div className='mb-4'>
                     <label>Email Address *</label>
                     <input type='email' placeholder='Email Address' id="email" value={formData.email} onChange={handlerInput} className='form-control' required/>
+                    <p className='text-danger footer-text'>{error?.email}</p>
                 </div>
                 {/* <div className='mb-4'>
                     <label>Company Address *</label>
@@ -113,6 +157,7 @@ function Form() {
                 <div className='mb-4'>
                     <label>Contact Number *</label> 
                     <input type='text' placeholder='Contact Number' id="contact_number" value={formData.contact_number} onChange={handlerInput} className='form-control' required/>
+                    <p className='text-danger footer-text'>{error?.contact_number}</p>
                 </div>
                 <div className='mb-4'>
                     <label>I am a .. *</label>
@@ -136,6 +181,7 @@ function Form() {
                             </div>
                         </div>
                     </div>
+                    <p className='text-danger footer-text'>{error?.services}</p>
                 </div>
                 <div className='mb-4'>
                     <label>I looking for *</label>
@@ -172,6 +218,7 @@ function Form() {
                         ))}
                     
                         {/* <div className='col'></div> */}
+                        <p className='text-danger footer-text'>{error?.requirement}</p>
                     </div>  
                 </div>
                 <div className='mb-4'>
@@ -183,6 +230,7 @@ function Form() {
                         <option value="$50,000 - $200,000">$50,000 - $200,000</option>
                         <option value="$1M and above">$1M and above</option>
                     </select>
+                    <p className='text-danger footer-text'>{error?.budget}</p>
                 </div>
                 <div className='mb-4'>
                     <label>I have a strict time line *</label>
@@ -192,6 +240,7 @@ function Form() {
                         <option value="2-4 Months">2-4 Months</option>
                         <option value="4-6 Months">4-6 Months</option>
                     </select>
+                    <p className='text-danger footer-text'>{error?.deadline}</p>
                 </div>
                 {/* <div className='mb-4'>
                     <label>Your Message *</label>
@@ -207,9 +256,10 @@ function Form() {
                         <option value="It was destiny">It was destiny</option>
                         {/* <option value="Recommended By A Past Client">Recommended By A Past Client</option> */}
                     </select>
+                    <p className='text-danger footer-text'>{error?.hear_us_from}</p>
                 </div>
                 <div className='mb-4'>
-                    <button className="submit-btn">Submit</button>
+                    <button className="submit-btn" disabled={isLoading}>{isLoading ? 'Submitting...' : 'Submit'}</button>
                 </div>
             </form>
         </div>

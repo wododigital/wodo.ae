@@ -4,52 +4,26 @@ import "./style.css";
 import BaseURL from "../../../components/other/BaseURL";
 
 function SliderCompany() {
+  const images = [
+    `${BaseURL}/media/2022/06/google-logo-web-1.png`,
+    `${BaseURL}/media/2022/06/godaddy-logo-2-1.png`,
+    `${BaseURL}/media/2022/06/Meta-Logo-1024x576-1.png`,
+    `${BaseURL}/media/2022/06/mailchimp-logo-black-png-transparent-860x239-1.png`,
+    `${BaseURL}/media/2022/06/2560px-Hostinger_logo_purple.svg-1.png`,
+    `${BaseURL}/media/2022/06/elementor-logo.png`,
+  ];
+
+  const repeatedImages = Array(30).fill(images).flat();
+
   return (
     <>
       <div className="slider">
         <div className="slide-track">
-          <div className="slide verticle_center_company">
-            <img
-              src={`${BaseURL}/media/2022/06/google-logo-web-1.png`}
-              width="200"
-              alt="Digital Marketing, Web Design & Development Services at Wodo Digital"
-            />
-          </div>
-          <div className="slide verticle_center_company">
-            <img
-              src={`${BaseURL}/media/2022/06/godaddy-logo-2-1.png`}
-              width="200"
-              alt="Digital Marketing, Web Design & Development Services at Wodo Digital"
-            />
-          </div>
-          <div className="slide verticle_center_company">
-            <img
-              src={`${BaseURL}/media/2022/06/Meta-Logo-1024x576-1.png`}
-              width="200"
-              alt="Digital Marketing, Web Design & Development Services at Wodo Digital"
-            />
-          </div>
-          <div className="slide verticle_center_company">
-            <img
-              src={`${BaseURL}/media/2022/06/mailchimp-logo-black-png-transparent-860x239-1.png`}
-              width="200"
-              alt="Digital Marketing, Web Design & Development Services at Wodo Digital"
-            />
-          </div>
-          <div className="slide verticle_center_company">
-            <img
-              src={`${BaseURL}/media/2022/06/2560px-Hostinger_logo_purple.svg-1.png`}
-              width="200"
-              alt="Digital Marketing, Web Design & Development Services at Wodo Digital"
-            />
-          </div>
-          <div className="slide verticle_center_company">
-            <img
-              src={`${BaseURL}/media/2022/06/elementor-logo.png`}
-              width="200"
-              alt="Digital Marketing, Web Design & Development Services at Wodo Digital"
-            />
-          </div>
+          {repeatedImages.map((src, index) => (
+            <div className="slide verticle_center_company" key={index}>
+              <img src={src} width="200" alt="Company Logo" onError={() => console.log(`Image failed to load: ${src}`)} />
+            </div>
+          ))}
         </div>
       </div>
     </>
@@ -61,9 +35,7 @@ function Services() {
     <>
       <div className="container pt-md-5 pt-3">
         <div style={{ display: "flex", width: "100%", position: "relative" }}>
-          <div>
-            {/* dash */}
-          </div>
+          <div>{/* dash */}</div>     
           <div>
             <h2 className="gf_h2 text-dark">
               BREATHING LIFE INTO
@@ -79,24 +51,22 @@ function Services() {
         <div className="row">
           <div className="col-md-4 test">
             <img
-               src={`${BaseURL}/media/2022/03/ezgif.com-gif-maker-3.gif`}
-               alt="Design and Branding Services"
+              src={`${BaseURL}/media/2022/03/ezgif.com-gif-maker-3.gif`}
+              alt="Design and Branding Services"
               className="services-gif"
             />
             <h3 className="gf_h4">
               Growth Galore,
               <br /> No Boredom
             </h3>
-            <p className="gf_text">
-              Spice up your strategy with growth-driven genius. We don't do
-              quick fixes; we're the strategic seasoning that makes your
-              business a long-lasting success.
+            <p className="gf_text text-justify">
+            Spice up your strategy with growth-driven genius. No quick fixes here—we’re the strategic seasoning that ensures your business thrives for the long haul.
             </p>
             <br />
             <ElementorButton
               hide={true}
               mode="light"
-              URL="/"
+              URL="/performance-marketing-services/"
               text="CASE CRACKER"
             />
           </div>
@@ -106,17 +76,15 @@ function Services() {
               alt="Development Services"
               className="services-gif"
             />
-            <h3 className="gf_h4">Tech Solutions</h3>
-            <p className="gf_text">
-              Need it all? WODO's got you covered - from domain debut to online
-              stardom, we're the tech wizards making your journey seamless,
-              magical, and utterly delightful. (AI to Saas, Digital campaigns)
+            <h3 className="gf_h4">Tech Triumph,<br/> Every Time</h3>
+            <p className="gf_text text-justify">
+            Need it all? WODO’s got you covered from domains to stardom; we’re the tech magicians for seamless, delightful journeys in AI, SaaS, and digital campaigns.
             </p>
             <br />
             <ElementorButton
               hide={true}
               mode="light"
-              URL="/"
+              URL="/custom-web-development-services"
               text="TAP TO VIEW"
             />
           </div>
@@ -131,39 +99,39 @@ function Services() {
               Not Silent Ring
             </h3>
             <p className="gf_text">
-              Our customer service isn't a cold shoulder. We're the hotline you
-              can't resist. Got questions? We've got answers - served up.
+            Our support isn’t a cold shoulder. We’re the hotline you simply can’t ignore. Got questions? We’ve got answers—delivered with style.
             </p>
             <br />
             <ElementorButton
               hide={true}
               mode="light"
-              URL="/"
+              URL="/design-and-branding-services"
               text="Let's talk solution"
             />
           </div>
         </div>
         <div className="pt-md-5 pt-2">
-        <div
-          style={{
-            display: "flex",
-            width: "100%",
-            position: "relative",
-          }}
-          className="py-md-5 py-2">
-          <div>
-            {/* dash */}
-          </div>
+          <div
+            style={{
+              display: "flex",
+              width: "100%",
+              position: "relative",
+            }}
+            className="py-md-5 py-2"
+          >
+            <div>{/* dash */}</div>
 
-          <div style={{ display: "flex", width: "100%", position: "relative" }}>
-            <h2 className="gf_h2 me-5">
-              DIGITAL 
-              <br />
-              PARTNERS
-            </h2>
-            <SliderCompany />
+            <div
+              style={{ display: "flex", width: "100%", position: "relative" }}
+            >
+              <h2 className="gf_h2 me-5">
+                DIGITAL
+                <br />
+                PARTNERS
+              </h2>
+              <SliderCompany />
+            </div>
           </div>
-        </div>
         </div>
       </div>
     </>
