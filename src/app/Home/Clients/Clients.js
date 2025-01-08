@@ -27,10 +27,10 @@ function Clients() {
           logo: ""+BaseURL+"/media/2024/04/PRK-logo.png",
           URL: "/projects/gandhadagudi/",
         },
-        {
-          logo: ""+BaseURL+"/media/2024/04/BKP-logo-.png",
-          URL: "",
-        },
+        // {
+        //   logo: ""+BaseURL+"/media/2024/04/BKP-logo-.png",
+        //   URL: "",
+        // },
         {
           logo: ""+BaseURL+"/media/2023/04/WODO-Cient-Lenskart.png",
           URL: "",
@@ -122,6 +122,10 @@ function Clients() {
           {
             logo: ""+BaseURL+"/media/2021/10/The-native-Angadi-Logo.png",
             URL: "/projects/the-native-angadi/",
+          },
+          {
+            logo: ""+BaseURL+"/media/2023/12/Mars-logo-blue.png",
+            URL: "/projects/mars-manufacturing-solutions/",
           },
         //   {
         //     logo: ""+BaseURL+"/media/2023/04/WODO-DGTL-1.png",
