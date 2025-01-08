@@ -10,17 +10,19 @@ import UsaFlag from "../media/usa-flag.webp";
 import IndiaFlag from "../media/indian-flag.webp";
 
 function Footer() {
-  const MenuText = {
-    textDecoration: "none",
-    color: "#c8c8c8",
-    fontSize: "1rem",
-    fontWeight: "300",
-    "&:hover": {
-      color: "#ffffff",
-    },
-    backgroundColor: "transparent",
-    border: "none",
-  };
+  const isMobile = window.innerWidth < 768;
+
+const MenuText = {
+  textDecoration: "none",
+  color: "#c8c8c8",
+  fontSize: isMobile ? "0.9rem" : "1rem",
+  fontWeight: "300",
+  "&:hover": {
+    color: "#ffffff",
+  },
+  backgroundColor: "transparent",
+  border: "none",
+};
 
   const goToInsights = () => {
     window.location.href = "/insights";
@@ -60,9 +62,9 @@ function Footer() {
                   </Link>
                 </li>
                 <li className="pt-2">
-                  <button onClick={goToInsights} style={MenuText}>
+                  <Link onClick={goToInsights} style={MenuText}>
                     Insights
-                  </button>
+                  </Link>
                 </li>
                 <li className="pt-2">
                   <Link to="/contact-us" style={MenuText}>
@@ -71,7 +73,7 @@ function Footer() {
                 </li>
               </ul>
             </div>
-            <div className="col-md-4 col-5 text-start pt-4 footer_align_list ps-0">
+            <div className="col-md-4 col-6 text-start pt-4 footer_align_list ps-0">
               <div>
                 <ul style={{ listStyle: "none" }}>
                   {/* <li style={MenuText}>hello@wodo.digital</li> */}
@@ -92,7 +94,7 @@ function Footer() {
                     </li>
                   </Link>
                   <Link to="tel:+971%2050%20722%208748">
-                    <li style={MenuText} className="pt-2">
+                    <li style={MenuText} className="pt-2" >
                       {/* <b>UAE</b> */}
                       <img src={UaeFlag} alt="" width="25px" />
                       <br />

@@ -37,8 +37,8 @@ function ProjectHeroSection() {
                       left: "-65px",
                     }}
                   ></div>
-                  <div>
-                    <h1 className="Heading_title">Real-World Success</h1>
+                  <div className="mobile_heading">
+                  <h1 className="Heading_title">Real-World Success</h1>
                   </div>
                 </div>
               </div>
@@ -99,7 +99,7 @@ function BodySection({ projects }) {
               </select>
             </div>
           </div>
-          <div className="col-12 col-md-6">
+          {/* <div className="col-12 col-md-6">
             <div className="py-3">
               <select
                 className="dropDownProject"
@@ -122,7 +122,7 @@ function BodySection({ projects }) {
                 <option value="Web Development">Web Development</option>
               </select>
             </div>
-          </div>
+          </div> */}
         </div>
         <div className="row py-4">
           {filteredProjects.length > 0 ? (

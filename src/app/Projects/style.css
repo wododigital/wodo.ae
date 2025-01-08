@@ -24,9 +24,15 @@
   font-weight: 400;
   color: #ffffff;
   background-color: #000000;
-  border-radius: 30px 30px 30px 30px;
-  padding: 20px 20px 20px 20px;
+  border-radius: 30px;
+  padding: 20px;
+  background-image: url('../../media/right-arrow.png');
+  background-size: 20px 20px; 
+  background-repeat: no-repeat;
+  background-position: right 20px center; 
+  appearance: none;
 }
+
 
 .singleprojecthero {
   height: 70vh;
@@ -169,11 +175,11 @@
   }
 
   .background_overlay {
-    height: 30vh;
+    height: 40vh;
   }
 
   .hero_backgroung_image {
-    height: 30vh;
+    height: 40vh;
   }
 
   .dropDownProject {
@@ -202,5 +208,8 @@
   }
   .service-title {
     font-size: 16px;
+  }
+  .mobile_heading{
+    margin-top: -40px;
   }
 }
